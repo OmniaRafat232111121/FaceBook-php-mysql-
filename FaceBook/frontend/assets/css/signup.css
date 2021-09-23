@@ -1,0 +1,138 @@
+.sign-container{
+    width: 100%;
+    height:100vh;
+    display:grid;
+    grid-template-columns: minmax(5rem,1fr) 2fr minmax(5rem,1fr);
+    grid-template-rows: repeat(2,min-content) 1fr;
+    
+}
+.nav-header-sign__up{
+    grid-column: 1/4;
+    grid-row:1/2;
+    box-shadow: 0 0 0.7rem rgba(0,0,0,0.3);
+    padding:2rem 0;
+}
+
+.form-container{
+    grid-column:2/3;
+    grid-row: 2/3;
+    background-color: #fff;
+    display:grid;
+    width:100rem;
+    grid-template-columns: 10rem 8fr;
+    grid-template-rows: 1.5fr 300px;
+    row-gap:10rem;
+}
+.nav-header-sign__up ul{
+    display:flex;
+    width: 100rem;
+    margin:auto;
+
+}
+.nav-header-sign__up ul li{
+padding:0 2.5rem;
+}
+.nav-header-sign__up ul li:last-child{
+    margin-left: auto;
+    }
+
+.nav-header-sign__up ul li::after{
+    content:"";
+    width:100%;
+    height:0.4rem;
+    position:absolute;
+    bottom:-2.5rem;
+    left:0;
+    opacity:0;
+    background-color: #1aa1f5;
+}
+
+.nav-header-sign__up ul li :hover{
+    opacity:1;
+    
+}
+.nav-header-sign__up a{
+    font-size: 1.6rem;
+    color:#555;
+}
+
+.nav-header-sign__up .fab.fa-twitter{
+    font-size: 2rem;
+    color:#1aa1f5;
+}
+.form-control{
+    grid-column:1/-1;
+    grid-row:1/2;
+    padding:5rem 0 1rem 0;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header__form-content{
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+.formField{
+    display:flex;
+    flex-direction: column;
+}
+.form-group{
+    margin-bottom: 2rem;
+}
+form  .form-group label{
+    font-size: 1.6rem;
+    font-weight: 300;
+    display:block;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+form input:not(.form-checkbox){
+    width: 30rem;
+    display:block;
+    height:3.5rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    border:0.1rem solid #ddd;
+}
+
+.btn-form{
+    padding:1rem 1.5rem;
+    background: #1aa1f5;
+    border-radius: 4rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right:1rem;
+    font-size: 1.5rem;
+    border:0.1rem solid #1aa1f5;
+    font-weight: bold;
+    color:#fff;
+}
+.form-btn-wrapper label{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+form input:not(.form-checkbox){
+  background-color: #d9ebf7;
+}
+.form-footer{
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    background: #edf3f7;
+    height:100px;
+    width: 100%;
+    
+
+}
+.form-footer p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-left: 1rem;
+}
